@@ -1,0 +1,5 @@
+.env
+webhook_url
+*.pyc
+__pycache__/
+.DS_Store
