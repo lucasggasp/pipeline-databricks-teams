@@ -2,18 +2,6 @@
 
 Pipeline de automação de dados que extrai informações do Databricks, processa análises com PySpark e notifica automaticamente via Teams e Gmail através do Power Automate.
 
-## 📋 Sumário
-
-- [Visão Geral](#visão-geral)
-- [Arquitetura](#arquitetura)
-- [Pré-requisitos](#pré-requisitos)
-- [Instalação](#instalação)
-- [Uso](#uso)
-- [Estrutura do Código](#estrutura-do-código)
-- [Explicação do Fluxo](#explicação-do-fluxo)
-- [Tratamento de Erros](#tratamento-de-erros)
-- [Melhorias Futuras](#melhorias-futuras)
-
 ## 🎯 Visão Geral
 
 Este projeto automatiza o processo de:
