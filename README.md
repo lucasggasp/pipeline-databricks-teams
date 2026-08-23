@@ -14,27 +14,22 @@ Este projeto automatiza o processo de:
 **Caso de uso:** Monitorar métricas de bases de dados críticas e manter stakeholders informados em tempo real.
 
 ## 🏗️ Arquitetura
-┌─────────────────┐
-│ Databricks │ Leitura de dados via Spark SQL
-└────────┬────────┘
-│
-┌────────▼────────────────────┐
-│ Script Python (PySpark) │ Cálculos e agregações
-│ - Extração de métricas │
-│ - Processamento de dados │
-│ - Formatação JSON │
-└────────┬────────────────────┘
-│
-┌────────▼────────────────────┐
-│ Webhook HTTP POST │ Envio de payload estruturado
-│ Power Automate │
-└────────┬────────────────────┘
-│
-┌────┴────┐
-│ │
-┌───▼───┐ ┌──▼──┐
-│ Teams │ │Gmail │ Notificações finais
-└───────┘ └──────┘
+
+```mermaid
+graph LR
+    A["📊 Databricks<br/>Spark SQL"] --> B["🐍 Python<br/>PySpark"]
+    B --> C["🔄 JSON<br/>Payload"]
+    C --> D["⚙️ Power Automate<br/>Webhook"]
+    D --> E["💬 Teams<br/>Notificação"]
+    D --> F["📧 Gmail<br/>Email"]
+    
+    style A fill:#039BE5
+    style B fill:#FF6B35
+    style C fill:#FFD700
+    style D fill:#7B3FF2
+    style E fill:#444
+    style F fill:#EA4335
+```
 
 ## 📦 Pré-requisitos
 
